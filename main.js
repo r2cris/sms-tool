@@ -57,7 +57,7 @@ async function getList(){
     
 
 }
-getList();
+
 
 
 // Set Templating Enginge
@@ -73,7 +73,7 @@ app.get('/', (req, res)=> {
 
 
 app.post('/',  urlencodedParser,function(req, res) {
-
+    getList();
         res.render('index');
         switch(req.body.list){
             case "all":
