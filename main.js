@@ -47,7 +47,7 @@ async function getList(){
             templistloop = await responseFUBloop;
             data += JSON.stringify(templistloop.people);
         }
-        fs.writeFileSync('C:/Users/crist/Desktop/json/list-json.json', data);
+        fs.writeFileSync('list-json.json', data);
 
                         
     }catch(e){
