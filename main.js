@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const { check, validationResult } = require('express-validator');
 const app = express();
-const port = 5000;
+const port = process.env.port || 3000;
 const url = 'https://api.followupboss.com/v1/people/';
 const options = {
     method: 'GET',
